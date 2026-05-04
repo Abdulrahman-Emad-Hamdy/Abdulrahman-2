@@ -6,7 +6,10 @@
         height: 500px;
 
   }
+.people .part-1 .man-1 .right .text p {
+    width:100%;
 
+}
 }
 @media screen and (min-width: 768px) {
   .products {
