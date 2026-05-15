@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --width-icon: 40px;
@@ -39,7 +40,8 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
-.parent .logo img {
+.parent .logo img,
+.footer .social .logo img {
   width: var(--width-icon);
   padding: var(--pad-icon);
   background-color: var(--color);
@@ -190,11 +192,13 @@ body {
   color: #fff;
   background-color: #8e51ff;
   border: 0;
+  cursor: pointer;
 }
 .parent-2 .child-2 .end .button .but-2 {
   color: #333;
   background-color: #fff;
   border: 2px solid #d1d5dc;
+  cursor: pointer;
 }
 .parent-2 .child-2 .end button:hover {
   transform: scale(1.03);
@@ -622,8 +626,7 @@ table tbody td {
 }
 .people .part-1 .man-1 .right .text p {
   margin: 0 0 7px 0;
-    width:50%;
-
+  width: 50%;
 }
 .people .part-1 .man-1 .right .text p:nth-of-type(1) {
   font-weight: 700;
@@ -732,6 +735,7 @@ table tbody td {
 .people .button button:hover {
   background-color: #fff;
   color: var(--color);
+  cursor: pointer;
 }
 .width {
   width: 100%;
@@ -903,9 +907,145 @@ table tbody td {
   background-color: transparent;
   border-radius: 35px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .products .button button:hover {
   background-color: #7f22fe;
   color: #fff;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  background-color: #101828;
+  padding: 20px;
+  font-family: sans-serif;
+}
+.footer .content {
+  width: 100%;
+  margin: auto;
+  padding-top: 60px;
+}
+
+.footer .social  {
+  padding-bottom: 30px;
+}
+.footer .social .logo {
+  display: flex;
+align-items: center;
+column-gap: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+.footer .social p{ 
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+color: #fff;
+font-style: normal;
+line-height: 26px;
+
+}
+.footer .social .icon {
+  display: flex;
+  justify-content: left;
+  column-gap: 15px;
+  
+}
+.footer .social .icon > div { display: flex;
+  justify-content: center;
+align-items: center;
+  width: 40px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background-color:#1e2939 ;
+  transition: all .2s;
+  
+}
+.footer .social .icon > div img { width: 20px;
+}
+.footer .social .icon .one:hover{   cursor: pointer;
+ background-color: #3b5998;
+}
+.footer .social .icon .two:hover{  cursor: pointer;
+ background-color: #1DA1F2;
+}
+.footer .social .icon .three:hover{  cursor: pointer;
+ background-color: #d6249f;
+}
+.footer .social .icon .four:hover{  cursor: pointer;
+ background-color: #FF0000;
+}
+
+.footer .content .content-1  {
+  padding-bottom: 30px;
+  
+}
+.footer .content .content-1 h5 {
+margin-top: 0;
+color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.footer .content .content-1 p {
+color: #99a1af;
+  font-family: sans-serif;
+  font-size:16px ;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.footer .content .content-1 p:hover {
+color: #fff;
+}
+.footer .foot {
+  
+  border-top: 0.5px solid #6a728231;
+    width: 100%;
+
+}
+.footer .foot .parent{
+  width: 100%;
+}
+.footer .foot .card { 
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  column-gap: 25px;
+}
+.footer .foot .card .paypal ,.master , .visa   {
+  border-radius: 10px; 
+  padding: 10px 10px ;
+  background-color: #fff;
+} 
+.footer .foot .card .paypal   { 
+  width:90px;
+}
+.footer .foot .card .master  { 
+  width:50px;
+}
+.footer .foot .card  .visa  { 
+  width:70px;
+}
+.footer .foot .card img[alt="paypal"] { 
+  width: 100%;
+}
+.footer .foot .card img[alt="master"] { 
+  width: 100%;
+}
+.footer .foot .card img[alt="visa"] { 
+  width: 100%;
+}
+.footer .foot p { 
+  color: #fff ;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+
 }
